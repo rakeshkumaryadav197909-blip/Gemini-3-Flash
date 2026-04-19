@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #050505; color: white; }
+.app-container { display: flex; height: 100vh; }
+
+.sidebar { width: 260px; background: #121212; padding: 20px; display: flex; flex-direction: column; border-right: 1px solid #222; }
+.logo { font-size: 24px; font-weight: bold; color: #10a37f; margin-bottom: 30px; }
+.new-chat { background: #1ed760; border: none; padding: 12px; border-radius: 25px; color: black; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
+.menu-item { color: #b3b3b3; text-decoration: none; padding: 15px; display: block; transition: 0.3s; }
+.menu-item:hover { color: white; background: #282828; border-radius: 10px; }
+
+.main-content { flex: 1; display: flex; flex-direction: column; position: relative; }
+.chat-window { flex: 1; overflow-y: auto; padding: 40px 15%; }
+.message { margin-bottom: 20px; padding: 15px; border-radius: 10px; line-height: 1.6; max-width: 80%; }
+.ai-msg { background: transparent; border: 1px solid #333; }
+.user-msg { background: #222; align-self: flex-end; margin-left: auto; }
+
+.music-player { background: #181818; padding: 20px; text-align: center; border-top: 1px solid #333; }
+.input-area { padding: 20px 15%; background: #050505; }
+.input-box { background: #222; border-radius: 30px; display: flex; padding: 10px 20px; align-items: center; }
+textarea { flex: 1; background: transparent; border: none; color: white; resize: none; outline: none; font-size: 16px; }
+#sendBtn { background: transparent; border: none; color: #1ed760; font-size: 20px; cursor: pointer; }
+
