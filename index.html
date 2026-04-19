@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Studio Pro - YouTube Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">AI Studio</div>
+            <button class="new-chat"><i class="fas fa-plus"></i> New Project</button>
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item" data-type="Premium Code 844"><i class="fas fa-bolt"></i> Premium 844</a>
+                <a href="#" class="menu-item" data-type="Image Gen"><i class="fas fa-paint-brush"></i> Thumbnail Maker</a>
+                <a href="#" class="menu-item" data-type="Video Gen"><i class="fas fa-video"></i> Video Studio</a>
+                <a href="#" class="menu-item" data-type="Music Gen"><i class="fas fa-music"></i> No-Copyright Music</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="chat-window" id="chatWindow">
+                <div class="message ai-msg">
+                    नमस्ते! मैं आपका YouTube पार्टनर AI हूँ। आपको **No-Copyright** म्यूजिक चाहिए या वीडियो के लिए स्क्रिप्ट?
+                </div>
+            </div>
+
+            <div id="musicPlayer" class="music-player" style="display:none;">
+                <p id="songName">Playing: AI Generated Beat</p>
+                <audio id="audioElement" controls>
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="input-area">
+                <div class="input-box">
+                    <textarea id="userInput" placeholder="यहाँ लिखें (जैसे: 'Create a sad lofi song')..."></textarea>
+                    <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
